@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Niña Linda Alicia</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background: white;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d63384;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #b32d6f;
+        }
+        .hidden {
+            display: none;
+        }
+        .signature {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #b32d6f;
+        }
+        .message {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Para Mi Niña Linda Alicia</h1>
+        <p>Mi licenciada favorita, qué honor el mío,<br>  
+           tenerte cerca en cada desafío.<br>  
+           Brillas más que la luna en su esplendor,<br>  
+           y en mi vida eres puro color.</p>
+
+        <p class="hidden" id="extra-poem">
+           En tu mirada encuentro mi paz,<br>  
+           y en tus abrazos, mi dulce hogar.<br>  
+           Eres mi musa, mi inspiración,<br>  
+           la dueña de mi corazón.  
+        </p>
+
+        <button class="btn" onclick="mostrarPoema()">Seguir leyendo</button>
+
+        <p class="message hidden" id="message">
+           Mi niña linda, espero verte pronto para poder estar junto a ti.  
+           La distancia no impide mi cariño por ti, porque siempre estás en mi corazón.  
+           Cada día que pasa, mi deseo de abrazarte crece más.  
+        </p>
+
+        <p class="signature">De: Anthony <br>  
+           Para: Mi niña linda Alicia</p>
+    </div>
+
+    <script>
+        function mostrarPoema() {
+            document.getElementById("extra-poem").classList.remove("hidden");
+            document.getElementById("message").classList.remove("hidden");
+            document.querySelector(".btn").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
